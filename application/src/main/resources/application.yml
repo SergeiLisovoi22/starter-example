@@ -1,0 +1,20 @@
+#logging:
+#  http:
+#    enable: false
+#    level: DEBUG
+#  level:
+#    root: debug
+
+#JpaConfig
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
+    hibernate:
+      ddl-auto: create
+      #DatasourceConfig
+  datasource:
+    url: jdbc:postgresql://localhost:5434/users
+    username: adm
+    password: adm
+    driver-class-name: org.postgresql.Driver
